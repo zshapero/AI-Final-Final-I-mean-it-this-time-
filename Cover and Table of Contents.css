@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Leadership Playbook — Cover & TOC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  html, body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #19374f;
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ---------- COVER ---------- */
+  .cover {
+    padding: 0;
+  }
+  .cover .top-bar {
+    width: 100%;
+    height: 18px;
+    background: #0B38DB;
+  }
+  .cover .title-block {
+    margin-top: 2.9in;
+    text-align: center;
+    padding: 0 1in;
+  }
+  .cover h1 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #0B38DB;
+    font-size: 54px;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+  }
+  .cover .divider {
+    width: 140px;
+    height: 5px;
+    background: #FF7600;
+    margin: 36px auto 24px;
+    border-radius: 2px;
+  }
+  .cover .subtitle {
+    color: #FF7600;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 36px;
+  }
+  .cover .description {
+    color: #5d6b79;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 44px;
+  }
+  .cover .brand {
+    color: #FF7600;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  /* ---------- TOC ---------- */
+  .toc {
+    padding: 0.85in 0.95in 0.9in 0.95in;
+  }
+  .toc h2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #19374f;
+    font-size: 34px;
+    margin-bottom: 6px;
+  }
+  .toc .title-underline {
+    width: 120px;
+    height: 5px;
+    background: #FF7600;
+    margin-bottom: 38px;
+    border-radius: 2px;
+  }
+  .toc .module {
+    margin-bottom: 26px;
+  }
+  .toc .module-title {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #0B38DB;
+    font-size: 17px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0B38DB;
+    margin-bottom: 6px;
+  }
+  .toc .chapter {
+    font-size: 14px;
+    color: #3d4a58;
+    padding: 9px 0 9px 22px;
+    border-bottom: 1px solid #e4e8ec;
+  }
+  .toc .chapter:last-child { border-bottom: none; }
+  .toc .appendix {
+    font-size: 14px;
+    color: #7a8593;
+    font-style: italic;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #e4e8ec;
+  }
+  .toc .appendix:last-child { border-bottom: none; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="top-bar"></div>
+  <div class="title-block">
+    <h1>AI LEADERSHIP<br>PLAYBOOK</h1>
+    <div class="divider"></div>
+    <div class="subtitle">The Complete Guide</div>
+    <div class="description">
+      A comprehensive guide for broadband leaders<br>
+      to understand, adopt, and leverage AI
+    </div>
+    <div class="brand">CALIX INC</div>
+  </div>
+</section>
+
+<!-- ============ TABLE OF CONTENTS ============ -->
+<section class="page toc">
+  <h2>Table of Contents</h2>
+  <div class="title-underline"></div>
+
+  <div class="module">
+    <div class="module-title">Module 1: Understanding AI and Why It Matters</div>
+    <div class="chapter">Chapter 1: Making AI Simple and Approachable</div>
+    <div class="chapter">Chapter 2: Three Initial AI Decisions That Will Set Your Course</div>
+    <div class="chapter">Chapter 3: Education &amp; Enablement</div>
+    <div class="chapter">Chapter 4: Change Management</div>
+    <div class="chapter">Chapter 5: Activate Your AI Leadership Team</div>
+  </div>
+
+  <div class="module">
+    <div class="module-title">Module 2: Get Started with Calix Agent Workforce</div>
+    <div class="chapter">Chapter 6: AI is Really a Change Initiative</div>
+    <div class="chapter">Chapter 7: Getting Started with Agentic AI</div>
+    <div class="chapter">Chapter 8: Where to Start with the Calix Agent Workforce Cloud</div>
+  </div>
+
+  <div class="module">
+    <div class="module-title">Module 3: Scaling AI Responsibly</div>
+    <div class="chapter">Chapter 9: Go Slow to Go Fast</div>
+    <div class="chapter">Chapter 10: AI Governance Goes Mainstream</div>
+    <div class="chapter">Chapter 11: Organizational Readiness and the Path Forward</div>
+  </div>
+
+  <div class="appendix">AI Ready Leader Strengths &amp; Opportunities Finder</div>
+  <div class="appendix">Thank You For Exploring This Playbook</div>
+</section>
+
+</body>
+</html>
