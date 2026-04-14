@@ -1299,7 +1299,7 @@
     </div>
 
     <!-- ==================== SECTION 3: AGENT SELECTOR TOOL ==================== -->
-    <h2>Connecting Business Objectives, KPI's and AI Capabilities</h2>
+    <h2>Connecting Business Objectives, KPI's and AI Initiatives</h2>
 
     <p>Knowing which AI capability connects to which financial outcome is not always clear. This tool makes that connection visible.</p>
 
@@ -1588,7 +1588,7 @@
   <div class=&quot;col active&quot; id=&quot;col-1&quot;>
     <div class=&quot;col-header&quot;>
       <div class=&quot;col-num&quot;>1</div>
-      <div class=&quot;col-title&quot;>Income Statement</div>
+      <div class=&quot;col-title&quot;>Business Objectives</div>
     </div>
     <div class=&quot;col-body&quot;>
       <div class=&quot;option-list&quot;>
@@ -1622,7 +1622,6 @@
           <strong>Installation &amp; Provisioning</strong>
           <small>New subscriber setup, early-life experience</small>
         </div>
-        <div class=&quot;cat-label&quot;>Operating Expense</div>
         <div class=&quot;option&quot; onclick=&quot;selectLine(this,'sales-mktg')&quot;>
           <strong>Sales &amp; Marketing</strong>
           <small>Advertising, acquisition, sales staff</small>
@@ -1650,7 +1649,7 @@
   <div class=&quot;col locked&quot; id=&quot;col-3&quot;>
     <div class=&quot;col-header&quot;>
       <div class=&quot;col-num&quot;>3</div>
-      <div class=&quot;col-title&quot;>AI Capability</div>
+      <div class=&quot;col-title&quot;>AI Initiative</div>
     </div>
     <div class=&quot;col-body&quot; id=&quot;cap-body&quot;>
       <div class=&quot;empty-state&quot;>Select a KPI first</div>
@@ -1671,8 +1670,8 @@ const DATA = {
     kpis: [
       { id: 'take-rate', name: 'Take Rate', desc: 'Percentage of serviceable addresses that subscribe', caps: [
         { name: 'Segment Builder', desc: 'AI targeting to identify high-propensity households and focus spend where it converts' },
-        { name: 'Dynamic Pricing', desc: 'AI-driven pricing models that optimize offers to convert at the right price point' },
-        { name: 'Intelligent Lead Scoring', desc: 'AI models that rank prospects by likelihood to subscribe' }
+        { name: 'Intelligent Lead Scoring', desc: 'AI models that rank prospects by likelihood to subscribe' },
+        { name: 'Offer Personalization', desc: 'AI-tailored offers matched to each prospect to improve conversion at the right price point' }
       ]},
       { id: 'churn', name: 'Churn Rate', desc: 'Percentage of subscribers who cancel each month or year', caps: [
         { name: 'Churn Prediction', desc: 'Identifies at-risk subscribers before they cancel, enabling proactive retention' },
@@ -1680,9 +1679,9 @@ const DATA = {
         { name: 'Sentiment Analysis', desc: 'Detects dissatisfaction trends in support interactions before they lead to churn' }
       ]},
       { id: 'arpu', name: 'ARPU', desc: 'Average Revenue Per User', caps: [
+        { name: 'Segment Builder', desc: 'Targets the right subscribers with higher-value service bundles' },
         { name: 'Upsell / Cross Sell', desc: 'AI recommendations for add-on services that increase revenue per subscriber' },
-        { name: 'Dynamic Pricing', desc: 'AI-driven tier optimization to maximize revenue per subscriber' },
-        { name: 'Segment Builder', desc: 'Targets the right subscribers with higher-value service bundles' }
+        { name: 'Offer Personalization', desc: 'AI-personalized offers that encourage higher-value service adoption' }
       ]}
     ]
   },
@@ -1692,15 +1691,18 @@ const DATA = {
     kpis: [
       { id: 'take-rate', name: 'Take Rate', desc: 'Business broadband adoption within serviceable footprint', caps: [
         { name: 'Segment Builder', desc: 'AI business segment analysis for identifying high-value commercial prospects' },
-        { name: 'Dynamic Pricing', desc: 'AI-driven pricing for commercial service tiers and contracts' }
+        { name: 'Intelligent Lead Scoring', desc: 'AI models that rank commercial prospects by likelihood to subscribe' },
+        { name: 'Offer Personalization', desc: 'AI-personalized offers tailored to each business segment' }
       ]},
       { id: 'churn', name: 'Churn Rate', desc: 'Business subscriber cancellation rate', caps: [
         { name: 'Churn Prediction', desc: 'AI model tuned for commercial accounts identifying at-risk business subscribers' },
-        { name: 'Upsell / Cross Sell', desc: 'AI-driven SmartBiz recommendations that increase account value and retention' }
+        { name: 'Upsell / Cross Sell', desc: 'AI-driven SmartBiz recommendations that increase account value and retention' },
+        { name: 'Sentiment Analysis', desc: 'Detects dissatisfaction signals in account interactions before cancellation' }
       ]},
       { id: 'arpu', name: 'ARPU', desc: 'Average Revenue Per Business Account', caps: [
         { name: 'Upsell / Cross Sell', desc: 'AI recommendations for SmartBiz and value-added services that grow revenue per account' },
-        { name: 'Dynamic Pricing', desc: 'AI-optimized commercial pricing to maximize contract value' }
+        { name: 'Segment Builder', desc: 'Targets the right commercial segments for higher-value service bundles' },
+        { name: 'Offer Personalization', desc: 'AI-personalized recommendations that expand wallet share per account' }
       ]}
     ]
   },
@@ -1710,8 +1712,7 @@ const DATA = {
     kpis: [
       { id: 'cpp', name: 'Cost per Premises Passed', desc: 'Buildout efficiency metric for grant-funded network expansion', caps: [
         { name: 'Grant Management Systems', desc: 'AI-assisted tracking of grant milestones, spend, and compliance requirements' },
-        { name: 'Predictive Compliance', desc: 'Proactively flags reporting gaps before they jeopardize grant awards' },
-        { name: 'Predictive CapEx Modeling', desc: 'AI capital forecasting to plan grant-funded buildout within budget' }
+        { name: 'Predictive Compliance', desc: 'Proactively flags reporting gaps before they jeopardize grant awards' }
       ]}
     ]
   },
@@ -1719,11 +1720,10 @@ const DATA = {
     label: 'Network Operations',
     takeaway: 'Network operations is one of the largest cost centers for a BSP. AI shifts teams from reactive firefighting to predictive maintenance — reducing Operating Expense while improving reliability.',
     kpis: [
-      { id: 'opex-sub', name: 'Network Operating Expense per Subscriber', desc: 'Operating cost per subscriber for running the network', caps: [
+      { id: 'opex-sub', name: 'Network Cost per Subscriber', desc: 'Total cost per subscriber for running the network', caps: [
         { name: 'Anomaly Detection', desc: 'Detects unusual network behavior before it escalates to costly outages' },
         { name: 'Predictive Maintenance', desc: 'Anticipates equipment failures, shifting from reactive to proactive maintenance' },
-        { name: 'Asset Lifecycle Modeling', desc: 'Optimizes equipment replacement timing to reduce emergency spend' },
-        { name: 'Predictive CapEx Modeling', desc: 'AI capital expenditure forecasting based on network demand trends' }
+        { name: 'Asset Lifecycle Modeling', desc: 'Optimizes equipment replacement timing to reduce emergency spend' }
       ]},
       { id: 'cpe-replace', name: 'CPE Replace Rate', desc: 'Frequency of customer premises equipment replacement', caps: [
         { name: 'ONT Anomaly Detection', desc: 'Enables targeted replacement rather than costly blanket swap-outs' },
@@ -1737,19 +1737,20 @@ const DATA = {
     takeaway: 'Support cost is tied to call volume and resolution speed. AI reduces both — deflecting calls through proactive outreach and helping agents resolve issues faster on first contact.',
     kpis: [
       { id: 'cost-call', name: 'Cost per Call', desc: 'Average cost to handle a single support interaction', caps: [
-        { name: 'ONT Anomaly Detection', desc: 'Proactive issue detection reduces inbound call volume before subscribers are affected' },
-        { name: 'Outage Manager', desc: 'AI-orchestrated outage response and automated communication to deflect calls' },
-        { name: 'A2A – Ticketing', desc: 'AI-to-agent ticket automation that speeds resolution and reduces handle time' }
+        { name: 'A2A – Ticketing', desc: 'AI-to-agent ticket automation that speeds resolution and reduces handle time' },
+        { name: 'Outage Management', desc: 'AI-orchestrated outage response with proactive alerts that deflect inbound calls' }
       ]},
       { id: 'fcr', name: 'First Call Resolution', desc: 'Percentage of issues resolved on the first contact', caps: [
         { name: 'Troubleshooting / RCA', desc: 'AI-guided diagnostics give agents accurate root cause analysis on the first interaction' },
         { name: 'Network Health', desc: 'Real-time visibility so agents can immediately confirm network-side causes' },
-        { name: 'ONT Speed &amp; Performance', desc: 'Surfaces the subscriber\'s actual performance data to the agent instantly' }
+        { name: 'ONT Speed &amp; Performance', desc: 'Surfaces the subscriber\'s actual performance data to the agent instantly' },
+        { name: 'WiFi Health', desc: 'Real-time Wi-Fi performance data surfaces the top call driver to agents for faster first-touch resolution' }
       ]},
       { id: 'call-in-rate', name: 'Call-In Rate', desc: 'Volume of inbound support contacts per subscriber', caps: [
-        { name: 'Outage Manager', desc: 'Proactive outage notifications reduce &quot;is my internet down?&quot; call spikes' },
         { name: 'Wi-Fi Placement', desc: 'AI Wi-Fi coverage optimization reduces the most common call driver' },
-        { name: 'Sentiment Analysis', desc: 'Identifies systemic issues driving repeat contacts' }
+        { name: 'Sentiment Analysis', desc: 'Identifies systemic issues driving repeat contacts' },
+        { name: 'WiFi Health', desc: 'Proactive Wi-Fi diagnostics reduce the largest category of inbound support calls' },
+        { name: 'Outage Management', desc: 'Proactive outage notifications reduce &quot;is my internet down?&quot; call spikes' }
       ]}
     ]
   },
@@ -1764,8 +1765,8 @@ const DATA = {
       ]},
       { id: 'cost-truck', name: 'Cost per Truck Roll', desc: 'Average cost of a field technician dispatch', caps: [
         { name: 'A2A – Ticketing', desc: 'Intelligent ticket routing ensures the right tech and tools on the first visit' },
-        { name: 'Outage Manager', desc: 'AI-coordinated dispatch during outages to optimize field resource allocation' },
-        { name: 'ONT Speed &amp; Performance', desc: 'Remote performance validation before sending a technician' }
+        { name: 'ONT Speed &amp; Performance', desc: 'Remote performance validation before sending a technician' },
+        { name: 'Outage Management', desc: 'AI-coordinated dispatch during outages to optimize field resource allocation' }
       ]}
     ]
   },
@@ -1789,15 +1790,17 @@ const DATA = {
     kpis: [
       { id: 'cac', name: 'Customer Acquisition Cost', desc: 'Fully loaded cost to acquire a new subscriber', caps: [
         { name: 'Segment Builder', desc: 'AI audience targeting reduces wasted spend by focusing on high-propensity prospects' },
-        { name: 'Intelligent Lead Scoring', desc: 'Ranks leads by conversion likelihood so sales effort goes to the best opportunities' }
+        { name: 'Intelligent Lead Scoring', desc: 'Ranks leads by conversion likelihood so sales effort goes to the best opportunities' },
+        { name: 'Campaign Builder', desc: 'AI-assisted campaign design that targets the right audience with the right message' }
       ]},
       { id: 'conversion', name: 'Conversion Rate', desc: 'Percentage of leads converted to active subscribers', caps: [
         { name: 'Intelligent Lead Scoring', desc: 'AI prioritization of highest-quality leads for faster, more efficient conversion' },
-        { name: 'Upsell / Cross Sell', desc: 'AI offer personalization that matches the right service to the right prospect' }
+        { name: 'Upsell / Cross Sell', desc: 'AI recommendations that match the right service to the right prospect' },
+        { name: 'Offer Personalization', desc: 'AI-tailored offers matched to the right prospect at the right moment' }
       ]},
       { id: 'mktg-pct', name: 'Marketing % of Revenue', desc: 'Marketing spend as a share of total revenue', caps: [
         { name: 'Segment Builder', desc: 'Concentrates budget on most-likely-to-convert audiences, improving efficiency' },
-        { name: 'Dynamic Pricing', desc: 'AI-optimized offers reduce discounting and promotional cost while maintaining conversion' }
+        { name: 'Offer Personalization', desc: 'AI-personalized offers reduce discount spend while maintaining conversion' }
       ]}
     ]
   },
@@ -1880,7 +1883,7 @@ function renderCaps() {
       <strong>${kpi.name}</strong>
       <small>${kpi.desc}</small>
     </div>
-    <div class=&quot;caps-label&quot;>AI Capabilities</div>
+    <div class=&quot;caps-label&quot;>AI Initiatives</div>
     ${capsHtml}
     ${takeawayHtml}`;
 }
