@@ -1299,7 +1299,7 @@
     </div>
 
     <!-- ==================== SECTION 3: AGENT SELECTOR TOOL ==================== -->
-    <h2>Connecting Business Objectives, KPI's and AI Initiatives</h2>
+    <h2>Connecting Business Objectives, KPI's and AI Capabilities</h2>
 
     <p>Knowing which AI capability connects to which financial outcome is not always clear. This tool makes that connection visible.</p>
 
@@ -1638,7 +1638,7 @@
   <div class=&quot;col locked&quot; id=&quot;col-2&quot;>
     <div class=&quot;col-header&quot;>
       <div class=&quot;col-num&quot;>2</div>
-      <div class=&quot;col-title&quot;>Key KPI</div>
+      <div class=&quot;col-title&quot;>KPIs</div>
     </div>
     <div class=&quot;col-body&quot; id=&quot;kpi-body&quot;>
       <div class=&quot;empty-state&quot;>Select an income line first</div>
@@ -1649,7 +1649,7 @@
   <div class=&quot;col locked&quot; id=&quot;col-3&quot;>
     <div class=&quot;col-header&quot;>
       <div class=&quot;col-num&quot;>3</div>
-      <div class=&quot;col-title&quot;>AI Initiative</div>
+      <div class=&quot;col-title&quot;>AI Capabilities</div>
     </div>
     <div class=&quot;col-body&quot; id=&quot;cap-body&quot;>
       <div class=&quot;empty-state&quot;>Select a KPI first</div>
@@ -1737,6 +1737,7 @@ const DATA = {
     takeaway: 'Support cost is tied to call volume and resolution speed. AI reduces both — deflecting calls through proactive outreach and helping agents resolve issues faster on first contact.',
     kpis: [
       { id: 'cost-call', name: 'Cost per Call', desc: 'Average cost to handle a single support interaction', caps: [
+        { name: 'ONT Anomaly Detection', desc: 'Proactive issue detection reduces inbound call volume before subscribers are affected' },
         { name: 'A2A – Ticketing', desc: 'AI-to-agent ticket automation that speeds resolution and reduces handle time' },
         { name: 'Outage Management', desc: 'AI-orchestrated outage response with proactive alerts that deflect inbound calls' }
       ]},
@@ -1795,8 +1796,7 @@ const DATA = {
       ]},
       { id: 'conversion', name: 'Conversion Rate', desc: 'Percentage of leads converted to active subscribers', caps: [
         { name: 'Intelligent Lead Scoring', desc: 'AI prioritization of highest-quality leads for faster, more efficient conversion' },
-        { name: 'Upsell / Cross Sell', desc: 'AI recommendations that match the right service to the right prospect' },
-        { name: 'Offer Personalization', desc: 'AI-tailored offers matched to the right prospect at the right moment' }
+        { name: 'Upsell / Cross Sell', desc: 'AI recommendations that match the right service to the right prospect' }
       ]},
       { id: 'mktg-pct', name: 'Marketing % of Revenue', desc: 'Marketing spend as a share of total revenue', caps: [
         { name: 'Segment Builder', desc: 'Concentrates budget on most-likely-to-convert audiences, improving efficiency' },
@@ -1812,7 +1812,7 @@ const DATA = {
         { name: 'Compliance Monitoring', desc: 'AI-automated tracking of regulatory requirements reduces manual overhead' },
         { name: 'NLP-Based Policy Audits', desc: 'NLP automates policy review, cutting legal and compliance labor costs' },
         { name: 'AI Threat Recognition', desc: 'AI detection of cybersecurity and regulatory threats reduces incident response cost' },
-        { name: 'Data Cleaning (BSS – Cloud)', desc: 'AI data normalization reduces billing errors and reconciliation costs' }
+        { name: 'Data Cleaning', desc: 'AI data normalization reduces billing errors and reconciliation costs' }
       ]}
     ]
   }
@@ -1883,7 +1883,7 @@ function renderCaps() {
       <strong>${kpi.name}</strong>
       <small>${kpi.desc}</small>
     </div>
-    <div class=&quot;caps-label&quot;>AI Initiatives</div>
+    <div class=&quot;caps-label&quot;>AI Capabilities</div>
     ${capsHtml}
     ${takeawayHtml}`;
 }
