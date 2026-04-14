@@ -991,6 +991,91 @@
             content-visibility: auto;
             contain-intrinsic-size: auto 500px;
         }
+
+        /* ============================================================
+           3-STEP PROCESS — BOLD TYPOGRAPHIC BLOCKS
+        ============================================================ */
+        .process-wrapper { margin: 48px 0 0; }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 0;
+            margin-bottom: 12px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .ps-num {
+            background: #0B38DB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 20px;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+        .ps-big-num {
+            font-family: 'Merriweather', serif;
+            font-size: 72px; font-weight: 700;
+            color: #fff;
+            line-height: 1;
+        }
+        .ps-num-label {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px; font-weight: 700;
+            color: rgba(255,255,255,0.55);
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+        }
+
+        .ps-content { padding: 32px 40px; }
+
+        .ps-title {
+            font-family: 'Merriweather', serif;
+            font-size: 28px; font-weight: 700;
+            color: #0B38DB;
+            margin-bottom: 14px;
+            line-height: 1.3;
+        }
+        .ps-content > p {
+            font-size: 22px; color: #444;
+            line-height: 1.8; margin-bottom: 18px;
+        }
+        .ps-ask {
+            background: #fafafa;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 16px 22px;
+        }
+        .ps-ask-label {
+            font-size: 14px; font-weight: 700;
+            color: #888; text-transform: uppercase;
+            letter-spacing: 1.5px; margin-bottom: 10px;
+        }
+        .ps-ask ul {
+            list-style: none; padding: 0; margin: 0;
+            display: flex; flex-direction: column; gap: 8px;
+        }
+        .ps-ask li {
+            font-size: 20px; color: #555;
+            padding-left: 22px; position: relative; line-height: 1.5;
+        }
+        .ps-ask li::before {
+            content: '→'; position: absolute; left: 0;
+            color: #FF7600; font-weight: 600;
+        }
+
+        /* Agent selector embed */
+        .agent-selector-embed {
+            margin: 40px 0 16px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
     </style>
 </head>
 <body>
@@ -1148,6 +1233,702 @@
                 </div>
             </div>
         </div>
+
+    <!-- ==================== SECTION 2: HOW TO PICK ==================== -->
+    <h2>Aligning AI to Your Business Objectives</h2>
+
+    <p>With multiple agentic workflows available, strong leaders don't start by asking which features are ready — they start with business priorities. The goal is to find the intersection of where your organization most needs to improve, where the data already supports action, and where your teams are ready to move.</p>
+
+    <div class="process-wrapper">
+
+      <div class="process-step">
+        <div class="ps-num">
+          <div class="ps-big-num">1</div>
+          <div class="ps-num-label">Step</div>
+        </div>
+        <div class="ps-content">
+          <div class="ps-title">Start with Business Priorities</div>
+          <p>Ground your conversation in financial reality. Where is cost highest? Where is revenue most constrained? Where do manual processes consume the most labor? Agentic AI should tie directly to lines on the P&L — not exist as a technology project in isolation.</p>
+          <div class="ps-ask">
+            <div class="ps-ask-label">Ask Your Leadership Team</div>
+            <ul>
+              <li>How are we measuring success today?</li>
+              <li>What is our top priority this year?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="ps-num">
+          <div class="ps-big-num">2</div>
+          <div class="ps-num-label">Step</div>
+        </div>
+        <div class="ps-content">
+          <div class="ps-title">Identify the KPI That Matters Most</div>
+          <p>Once you've located the business pressure point, name the specific metric. Is it subscriber churn rate? Mean time to repair? Cost per truck roll? Marketing conversion rate? A sharp KPI gives your agentic initiative a clear target — and makes it easy to demonstrate progress to your board and executive team.</p>
+          <div class="ps-ask">
+            <div class="ps-ask-label">Ask Your Leadership Team</div>
+            <ul>
+              <li>Where does performance tend to drift?</li>
+              <li>When something goes wrong, how quickly do we know and act?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="ps-num">
+          <div class="ps-big-num">3</div>
+          <div class="ps-num-label">Step</div>
+        </div>
+        <div class="ps-content">
+          <div class="ps-title">Map the AI Capability That Can Influence It</div>
+          <p>With a KPI in hand, work backward to identify which agent or combination of agents can realistically move that number. This step should involve both your AI leadership team and operational leads — it bridges strategy and execution, ensuring the capability you deploy is connected to the outcome you're chasing.</p>
+          <div class="ps-ask">
+            <div class="ps-ask-label">Ask Your Leadership Team</div>
+            <ul>
+              <li>Which agents align to this KPI?</li>
+              <li>Is our data ready enough to act — or close to it?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p>In many organizations, the best entry point is where three conditions overlap simultaneously. Starting where all three are present builds early momentum and confidence — and gives you the proof point needed to expand to more complex use cases.</p>
+
+    <div class="sweet-spot">
+      <div class="sweet-spot-title">Where To Start First</div>
+      <div class="sweet-spot-subtitle">Start where all three of these conditions are true at once</div>
+      <div class="sweet-spot-cards">
+        <div class="ss-card">
+          <div class="ss-card-num">01</div>
+          <div class="ss-card-label">Clear Outcome</div>
+          <div class="ss-card-text">The business outcome is measurable and tied to the P&L</div>
+        </div>
+        <div class="ss-card">
+          <div class="ss-card-num">02</div>
+          <div class="ss-card-label">Ready Data</div>
+          <div class="ss-card-text">The supporting data is reasonably ready to use today</div>
+        </div>
+        <div class="ss-card">
+          <div class="ss-card-num">03</div>
+          <div class="ss-card-label">Motivated Team</div>
+          <div class="ss-card-text">The team is willing and prepared to improve the workflow</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="important-box">
+      <p><strong>Don't wait for perfect conditions.</strong> "Reasonably ready data" is the operative phrase. No organization's data is perfect before they begin. The discipline of activating an agentic workflow accelerates data quality improvement — the agents surface gaps you didn't know you had and create accountability for fixing them.</p>
+    </div>
+
+    <!-- ==================== SECTION 3: AGENT SELECTOR TOOL ==================== -->
+    <h2>Connecting Business Objectives, KPI's and AI Capabilities</h2>
+
+    <p>Knowing which AI capability connects to which financial outcome is not always clear. This tool makes that connection visible.</p>
+
+    <p>Select the business objectives that are most relevant to your role, then choose the KPI you want to improve. This tool shows you which AI capabilities can influence that metric and explain how each one could drive results.</p>
+
+    <p><em>* These are illustrative examples to help you understand and prioritize your AI journey.</em></p>
+
+    <!-- ============================================================
+         PLACEHOLDER: AGENT SELECTOR TOOL
+         This interactive component will be built separately.
+         Replace the block below with the final embedded tool.
+    ============================================================ -->
+    <div class="agent-selector-embed">
+      <iframe loading="lazy" srcdoc="<!DOCTYPE html>
+<html lang=&quot;en&quot;>
+<head>
+<meta charset=&quot;UTF-8&quot;>
+<meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
+<title>Agent Use Case Examples</title>
+<link href=&quot;https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Open+Sans:wght@400;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot; >
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    padding: 24px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  /* ── 3-COLUMN LAYOUT ── */
+  .tool-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e8e8e8;
+    transition: opacity 0.2s;
+  }
+
+  .col:last-child { border-right: none; }
+
+  .col.locked {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  /* ── COLUMN HEADER ── */
+  .col-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fafafa;
+  }
+
+  .col-num {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 700;
+    color: #bbb;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .col.active .col-num {
+    border-color: #FF7600;
+    background: #FF7600;
+    color: #fff;
+  }
+
+  .col.done .col-num {
+    border-color: #0B38DB;
+    background: #0B38DB;
+    color: #fff;
+  }
+
+  .col-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #bbb;
+    transition: color 0.2s;
+  }
+
+  .col.active .col-title { color: #FF7600; }
+  .col.done .col-title { color: #0B38DB; }
+
+  /* ── COLUMN BODY ── */
+  .col-body {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    max-height: 900px;
+  }
+
+  .col-body::-webkit-scrollbar { width: 3px; }
+  .col-body::-webkit-scrollbar-thumb { background: #e0e0e0; border-radius: 2px; }
+
+  /* ── CAT LABELS ── */
+  .cat-label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #ff7e21;
+    padding: 8px 2px 4px;
+  }
+
+  .cat-label:first-child { padding-top: 2px; }
+
+  /* ── OPTIONS ── */
+  .option-list { display: flex; flex-direction: column; gap: 4px; }
+
+  .option {
+    padding: 10px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: #fff;
+    font-size: 22px;
+    color: #555;
+    line-height: 1.3;
+  }
+
+  .option:hover { border-color: #FF7600; background: #fff8f2; color: #333; }
+
+  .option.selected {
+    border-color: #FF7600;
+    border-left: 3px solid #FF7600;
+    background: #fff3e6;
+    color: #333;
+  }
+
+  .option strong {
+    display: block;
+    font-weight: 600;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 2px;
+  }
+
+  .option small { font-size: 18px; color: #999; }
+
+  .option.selected small { color: #888; }
+
+  /* ── RESULT ITEMS (col 2 &amp; 3) ── */
+  .cap-item {
+    padding: 8px 10px 8px 12px;
+    border-left: 3px solid #FF7600;
+    margin-bottom: 8px;
+    animation: fadeIn 0.2s ease both;
+  }
+
+  .cap-item:nth-child(2){animation-delay:.04s}
+  .cap-item:nth-child(3){animation-delay:.08s}
+  .cap-item:nth-child(4){animation-delay:.12s}
+  .cap-item:nth-child(5){animation-delay:.16s}
+
+  .cap-item strong {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FF7600;
+    margin-bottom: 2px;
+  }
+
+  .cap-item small {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* KPI result header */
+  .kpi-result {
+    background: #f8f9ff;
+    border-left: 3px solid #0B38DB;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .kpi-result strong {
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0B38DB;
+    margin-bottom: 4px;
+  }
+
+  .kpi-result small { font-size: 18px; color: #777; }
+
+  .caps-label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #bbb;
+    margin-bottom: 8px;
+    padding-top: 2px;
+  }
+
+  /* Takeaway box */
+  .takeaway-box {
+    background: #0B38DB;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  .takeaway-box strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 6px;
+  }
+
+  .takeaway-box p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Empty state */
+  .empty-state {
+    padding: 24px 8px;
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    font-style: italic;
+  }
+
+  /* Restart */
+  .tool-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .btn-restart {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0B38DB;
+    background: #fff;
+    border: 1px solid #0B38DB;
+    border-radius: 5px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .btn-restart:hover { background: #f8f9ff; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-4px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class=&quot;tool-grid&quot;>
+
+  <!-- COL 1: Income Statement -->
+  <div class=&quot;col active&quot; id=&quot;col-1&quot;>
+    <div class=&quot;col-header&quot;>
+      <div class=&quot;col-num&quot;>1</div>
+      <div class=&quot;col-title&quot;>Income Statement</div>
+    </div>
+    <div class=&quot;col-body&quot;>
+      <div class=&quot;option-list&quot;>
+        <div class=&quot;cat-label&quot;>Revenue</div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'res-internet')&quot;>
+          <strong>Residential Broadband</strong>
+          <small>Monthly internet &amp; value-added services</small>
+        </div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'biz-internet')&quot;>
+          <strong>Business / Commercial</strong>
+          <small>Business internet, SmartBiz, commercial services</small>
+        </div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'grants')&quot;>
+          <strong>Government Grants &amp; Subsidies</strong>
+          <small>BEAD, RDOF, federal funding programs</small>
+        </div>
+        <div class=&quot;cat-label&quot;>Expenses</div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'netops')&quot;>
+          <strong>Network Operations</strong>
+          <small>NOC, maintenance, equipment, upgrades</small>
+        </div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'cust-support')&quot;>
+          <strong>Customer Support</strong>
+          <small>Support staff, call center, service delivery</small>
+        </div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'field-support')&quot;>
+          <strong>Field Support (Truck Rolls)</strong>
+          <small>Field technician dispatch costs</small>
+        </div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'install')&quot;>
+          <strong>Installation &amp; Provisioning</strong>
+          <small>New subscriber setup, early-life experience</small>
+        </div>
+        <div class=&quot;cat-label&quot;>Operating Expense</div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'sales-mktg')&quot;>
+          <strong>Sales &amp; Marketing</strong>
+          <small>Advertising, acquisition, sales staff</small>
+        </div>
+        <div class=&quot;option&quot; onclick=&quot;selectLine(this,'compliance')&quot;>
+          <strong>Compliance &amp; Regulatory</strong>
+          <small>Regulatory reporting, IT, admin costs</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COL 2: KPI -->
+  <div class=&quot;col locked&quot; id=&quot;col-2&quot;>
+    <div class=&quot;col-header&quot;>
+      <div class=&quot;col-num&quot;>2</div>
+      <div class=&quot;col-title&quot;>Key KPI</div>
+    </div>
+    <div class=&quot;col-body&quot; id=&quot;kpi-body&quot;>
+      <div class=&quot;empty-state&quot;>Select an income line first</div>
+    </div>
+  </div>
+
+  <!-- COL 3: AI Capability -->
+  <div class=&quot;col locked&quot; id=&quot;col-3&quot;>
+    <div class=&quot;col-header&quot;>
+      <div class=&quot;col-num&quot;>3</div>
+      <div class=&quot;col-title&quot;>AI Capability</div>
+    </div>
+    <div class=&quot;col-body&quot; id=&quot;cap-body&quot;>
+      <div class=&quot;empty-state&quot;>Select a KPI first</div>
+    </div>
+  </div>
+
+</div>
+
+<div class=&quot;tool-footer&quot;>
+  <button class=&quot;btn-restart&quot; onclick=&quot;restart()&quot;>↺ Start Over</button>
+</div>
+
+<script>
+const DATA = {
+  'res-internet': {
+    label: 'Residential Broadband',
+    takeaway: 'Residential revenue grows when you acquire efficiently and retain longer. AI predicts who\'s about to leave, targets the right prospects, and grows wallet share through smart upselling.',
+    kpis: [
+      { id: 'take-rate', name: 'Take Rate', desc: 'Percentage of serviceable addresses that subscribe', caps: [
+        { name: 'Segment Builder', desc: 'AI targeting to identify high-propensity households and focus spend where it converts' },
+        { name: 'Dynamic Pricing', desc: 'AI-driven pricing models that optimize offers to convert at the right price point' },
+        { name: 'Intelligent Lead Scoring', desc: 'AI models that rank prospects by likelihood to subscribe' }
+      ]},
+      { id: 'churn', name: 'Churn Rate', desc: 'Percentage of subscribers who cancel each month or year', caps: [
+        { name: 'Churn Prediction', desc: 'Identifies at-risk subscribers before they cancel, enabling proactive retention' },
+        { name: 'Upsell / Cross Sell', desc: 'Increases stickiness by recommending relevant value-added services' },
+        { name: 'Sentiment Analysis', desc: 'Detects dissatisfaction trends in support interactions before they lead to churn' }
+      ]},
+      { id: 'arpu', name: 'ARPU', desc: 'Average Revenue Per User', caps: [
+        { name: 'Upsell / Cross Sell', desc: 'AI recommendations for add-on services that increase revenue per subscriber' },
+        { name: 'Dynamic Pricing', desc: 'AI-driven tier optimization to maximize revenue per subscriber' },
+        { name: 'Segment Builder', desc: 'Targets the right subscribers with higher-value service bundles' }
+      ]}
+    ]
+  },
+  'biz-internet': {
+    label: 'Business / Commercial',
+    takeaway: 'Business accounts have higher ARPU and lower churn when managed well. AI helps identify underserved businesses, predict cancellation risk, and expand services to existing accounts.',
+    kpis: [
+      { id: 'take-rate', name: 'Take Rate', desc: 'Business broadband adoption within serviceable footprint', caps: [
+        { name: 'Segment Builder', desc: 'AI business segment analysis for identifying high-value commercial prospects' },
+        { name: 'Dynamic Pricing', desc: 'AI-driven pricing for commercial service tiers and contracts' }
+      ]},
+      { id: 'churn', name: 'Churn Rate', desc: 'Business subscriber cancellation rate', caps: [
+        { name: 'Churn Prediction', desc: 'AI model tuned for commercial accounts identifying at-risk business subscribers' },
+        { name: 'Upsell / Cross Sell', desc: 'AI-driven SmartBiz recommendations that increase account value and retention' }
+      ]},
+      { id: 'arpu', name: 'ARPU', desc: 'Average Revenue Per Business Account', caps: [
+        { name: 'Upsell / Cross Sell', desc: 'AI recommendations for SmartBiz and value-added services that grow revenue per account' },
+        { name: 'Dynamic Pricing', desc: 'AI-optimized commercial pricing to maximize contract value' }
+      ]}
+    ]
+  },
+  'grants': {
+    label: 'Government Grants &amp; Subsidies',
+    takeaway: 'Grant programs like BEAD represent significant capital. AI helps BSPs manage compliance, forecast buildout costs, and protect funding through proactive reporting.',
+    kpis: [
+      { id: 'cpp', name: 'Cost per Premises Passed', desc: 'Buildout efficiency metric for grant-funded network expansion', caps: [
+        { name: 'Grant Management Systems', desc: 'AI-assisted tracking of grant milestones, spend, and compliance requirements' },
+        { name: 'Predictive Compliance', desc: 'Proactively flags reporting gaps before they jeopardize grant awards' },
+        { name: 'Predictive CapEx Modeling', desc: 'AI capital forecasting to plan grant-funded buildout within budget' }
+      ]}
+    ]
+  },
+  'netops': {
+    label: 'Network Operations',
+    takeaway: 'Network operations is one of the largest cost centers for a BSP. AI shifts teams from reactive firefighting to predictive maintenance — reducing Operating Expense while improving reliability.',
+    kpis: [
+      { id: 'opex-sub', name: 'Network Operating Expense per Subscriber', desc: 'Operating cost per subscriber for running the network', caps: [
+        { name: 'Anomaly Detection', desc: 'Detects unusual network behavior before it escalates to costly outages' },
+        { name: 'Predictive Maintenance', desc: 'Anticipates equipment failures, shifting from reactive to proactive maintenance' },
+        { name: 'Asset Lifecycle Modeling', desc: 'Optimizes equipment replacement timing to reduce emergency spend' },
+        { name: 'Predictive CapEx Modeling', desc: 'AI capital expenditure forecasting based on network demand trends' }
+      ]},
+      { id: 'cpe-replace', name: 'CPE Replace Rate', desc: 'Frequency of customer premises equipment replacement', caps: [
+        { name: 'ONT Anomaly Detection', desc: 'Enables targeted replacement rather than costly blanket swap-outs' },
+        { name: 'Predictive Maintenance', desc: 'Predicts CPE failure timing to plan replacements proactively' },
+        { name: 'Network Health', desc: 'Real-time device visibility to identify failing equipment before subscriber impact' }
+      ]}
+    ]
+  },
+  'cust-support': {
+    label: 'Customer Support',
+    takeaway: 'Support cost is tied to call volume and resolution speed. AI reduces both — deflecting calls through proactive outreach and helping agents resolve issues faster on first contact.',
+    kpis: [
+      { id: 'cost-call', name: 'Cost per Call', desc: 'Average cost to handle a single support interaction', caps: [
+        { name: 'ONT Anomaly Detection', desc: 'Proactive issue detection reduces inbound call volume before subscribers are affected' },
+        { name: 'Outage Manager', desc: 'AI-orchestrated outage response and automated communication to deflect calls' },
+        { name: 'A2A – Ticketing', desc: 'AI-to-agent ticket automation that speeds resolution and reduces handle time' }
+      ]},
+      { id: 'fcr', name: 'First Call Resolution', desc: 'Percentage of issues resolved on the first contact', caps: [
+        { name: 'Troubleshooting / RCA', desc: 'AI-guided diagnostics give agents accurate root cause analysis on the first interaction' },
+        { name: 'Network Health', desc: 'Real-time visibility so agents can immediately confirm network-side causes' },
+        { name: 'ONT Speed &amp; Performance', desc: 'Surfaces the subscriber\'s actual performance data to the agent instantly' }
+      ]},
+      { id: 'call-in-rate', name: 'Call-In Rate', desc: 'Volume of inbound support contacts per subscriber', caps: [
+        { name: 'Outage Manager', desc: 'Proactive outage notifications reduce &quot;is my internet down?&quot; call spikes' },
+        { name: 'Wi-Fi Placement', desc: 'AI Wi-Fi coverage optimization reduces the most common call driver' },
+        { name: 'Sentiment Analysis', desc: 'Identifies systemic issues driving repeat contacts' }
+      ]}
+    ]
+  },
+  'field-support': {
+    label: 'Field Support (Truck Rolls)',
+    takeaway: 'Truck rolls often cost $150–$300 per dispatch. AI helps avoid unnecessary visits through remote diagnostics and ensures the issue is resolved on the first visit when a tech does go out.',
+    kpis: [
+      { id: 'truck-roll', name: 'Truck Roll Rate', desc: 'Frequency of field technician dispatches per subscriber', caps: [
+        { name: 'ONT Anomaly Detection', desc: 'Remote detection and diagnosis resolves many issues without dispatching a technician' },
+        { name: 'Troubleshooting / RCA', desc: 'AI-guided remote root cause analysis before dispatching a field tech' },
+        { name: 'Wi-Fi Placement', desc: 'Remote Wi-Fi optimization resolves many connectivity complaints without a site visit' }
+      ]},
+      { id: 'cost-truck', name: 'Cost per Truck Roll', desc: 'Average cost of a field technician dispatch', caps: [
+        { name: 'A2A – Ticketing', desc: 'Intelligent ticket routing ensures the right tech and tools on the first visit' },
+        { name: 'Outage Manager', desc: 'AI-coordinated dispatch during outages to optimize field resource allocation' },
+        { name: 'ONT Speed &amp; Performance', desc: 'Remote performance validation before sending a technician' }
+      ]}
+    ]
+  },
+  'install': {
+    label: 'Installation &amp; Provisioning',
+    takeaway: 'A great installation sets the tone for the entire subscriber relationship. AI ensures customers experience the service they paid for from day one, dramatically reducing early-life trouble tickets.',
+    kpis: [
+      { id: 'ttv', name: 'Time to Value (Install)', desc: 'Duration from order to first positive service experience', caps: [
+        { name: 'Wi-Fi Placement', desc: 'AI-optimized router and extender placement during installation' },
+        { name: 'ONT Speed &amp; Performance', desc: 'AI validation that delivered speeds match the subscribed tier from day one' }
+      ]},
+      { id: 'early-tickets', name: 'Trouble Tickets in First 45 Days', desc: 'Early-life failure rate — a key indicator of installation quality', caps: [
+        { name: 'Wi-Fi Placement', desc: 'AI-guided installation reduces the Wi-Fi complaints that dominate early-life tickets' },
+        { name: 'ONT Anomaly Detection', desc: 'Early detection of ONT configuration issues before they generate trouble tickets' }
+      ]}
+    ]
+  },
+  'sales-mktg': {
+    label: 'Sales &amp; Marketing',
+    takeaway: 'Marketing efficiency is the difference between sustainable growth and burning budget. AI helps BSPs target the right prospects, score leads accurately, and convert at a lower cost.',
+    kpis: [
+      { id: 'cac', name: 'Customer Acquisition Cost', desc: 'Fully loaded cost to acquire a new subscriber', caps: [
+        { name: 'Segment Builder', desc: 'AI audience targeting reduces wasted spend by focusing on high-propensity prospects' },
+        { name: 'Intelligent Lead Scoring', desc: 'Ranks leads by conversion likelihood so sales effort goes to the best opportunities' }
+      ]},
+      { id: 'conversion', name: 'Conversion Rate', desc: 'Percentage of leads converted to active subscribers', caps: [
+        { name: 'Intelligent Lead Scoring', desc: 'AI prioritization of highest-quality leads for faster, more efficient conversion' },
+        { name: 'Upsell / Cross Sell', desc: 'AI offer personalization that matches the right service to the right prospect' }
+      ]},
+      { id: 'mktg-pct', name: 'Marketing % of Revenue', desc: 'Marketing spend as a share of total revenue', caps: [
+        { name: 'Segment Builder', desc: 'Concentrates budget on most-likely-to-convert audiences, improving efficiency' },
+        { name: 'Dynamic Pricing', desc: 'AI-optimized offers reduce discounting and promotional cost while maintaining conversion' }
+      ]}
+    ]
+  },
+  'compliance': {
+    label: 'Compliance &amp; Regulatory',
+    takeaway: 'Compliance costs grow with network scale. AI automates tracking, auditing, and reporting — keeping overhead low as the business grows without adding headcount.',
+    kpis: [
+      { id: 'overhead', name: 'Overhead %', desc: 'Administrative and compliance cost as a share of revenue', caps: [
+        { name: 'Compliance Monitoring', desc: 'AI-automated tracking of regulatory requirements reduces manual overhead' },
+        { name: 'NLP-Based Policy Audits', desc: 'NLP automates policy review, cutting legal and compliance labor costs' },
+        { name: 'AI Threat Recognition', desc: 'AI detection of cybersecurity and regulatory threats reduces incident response cost' },
+        { name: 'Data Cleaning (BSS – Cloud)', desc: 'AI data normalization reduces billing errors and reconciliation costs' }
+      ]}
+    ]
+  }
+};
+
+let selectedLineId = null;
+let selectedKpiId = null;
+
+function selectLine(el, id) {
+  document.querySelectorAll('#col-1 .option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedLineId = id;
+  selectedKpiId = null;
+
+  // Unlock col 2, lock col 3
+  document.getElementById('col-1').classList.add('done');
+  document.getElementById('col-2').classList.remove('locked');
+  document.getElementById('col-2').classList.add('active');
+  document.getElementById('col-3').classList.add('locked');
+  document.getElementById('col-3').classList.remove('active','done');
+
+  renderKpiOptions();
+  document.getElementById('cap-body').innerHTML = '<div class=&quot;empty-state&quot;>Select a KPI first</div>';
+}
+
+function renderKpiOptions() {
+  const item = DATA[selectedLineId];
+  if (!item) return;
+  document.getElementById('kpi-body').innerHTML = item.kpis.map(kpi => `
+    <div class=&quot;option&quot; onclick=&quot;selectKpi(this,'${kpi.id}')&quot;>
+      <strong>${kpi.name}</strong>
+      <small>${kpi.desc}</small>
+    </div>`).join('');
+}
+
+function selectKpi(el, id) {
+  document.querySelectorAll('#kpi-body .option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedKpiId = id;
+
+  document.getElementById('col-2').classList.add('done');
+  document.getElementById('col-2').classList.remove('active');
+  document.getElementById('col-3').classList.remove('locked');
+  document.getElementById('col-3').classList.add('active');
+
+  renderCaps();
+}
+
+function renderCaps() {
+  const item = DATA[selectedLineId];
+  const kpi = item?.kpis.find(k => k.id === selectedKpiId);
+  if (!kpi) return;
+
+  const capsHtml = kpi.caps.map(cap => `
+    <div class=&quot;cap-item&quot;>
+      <strong>${cap.name}</strong>
+      <small>${cap.desc}</small>
+    </div>`).join('');
+
+  const takeawayHtml = item.takeaway ? `
+    <div class=&quot;takeaway-box&quot;>
+      <strong>Key Takeaway</strong>
+      <p>${item.takeaway}</p>
+    </div>` : '';
+
+  document.getElementById('cap-body').innerHTML = `
+    <div class=&quot;kpi-result&quot;>
+      <strong>${kpi.name}</strong>
+      <small>${kpi.desc}</small>
+    </div>
+    <div class=&quot;caps-label&quot;>AI Capabilities</div>
+    ${capsHtml}
+    ${takeawayHtml}`;
+}
+
+function restart() {
+  selectedLineId = null; selectedKpiId = null;
+  document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+  document.getElementById('col-1').classList.remove('done');
+  document.getElementById('col-1').classList.add('active');
+  document.getElementById('col-2').classList.add('locked');
+  document.getElementById('col-2').classList.remove('active','done');
+  document.getElementById('col-3').classList.add('locked');
+  document.getElementById('col-3').classList.remove('active','done');
+  document.getElementById('kpi-body').innerHTML = '<div class=&quot;empty-state&quot;>Select an income line first</div>';
+  document.getElementById('cap-body').innerHTML = '<div class=&quot;empty-state&quot;>Select a KPI first</div>';
+}
+</script>
+</body>
+</html>
+" style="width:100%;border:none;display:block;" height="1100" scrolling="no"></iframe>
+    </div>
 
         <div class="takeaways-box">
             <h2>Chapter Takeaway</h2>
