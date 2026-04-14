@@ -1076,6 +1076,15 @@
             overflow: hidden;
         }
 
+        /* Hide elements when exported to PDF via print CSS.
+           The interactive "Connecting Business Objectives" tool relies on
+           click-driven JS state and renders as empty placeholder columns
+           in a static snapshot, so it (and its intro copy) is hidden in
+           print. Web readers still see and interact with it normally. */
+        @media print {
+            .print-hide { display: none !important; }
+        }
+
     </style>
 </head>
 <body>
@@ -1299,6 +1308,7 @@
     </div>
 
     <!-- ==================== SECTION 3: AGENT SELECTOR TOOL ==================== -->
+    <div class="print-hide">
     <h2>Connecting Business Objectives, KPI's and AI Capabilities</h2>
 
     <p>Knowing which AI capability connects to which financial outcome is not always clear. This tool makes that connection visible.</p>
@@ -1905,6 +1915,7 @@ function restart() {
 </html>
 " style="width:100%;border:none;display:block;" height="1100" scrolling="no"></iframe>
     </div>
+    </div><!-- /.print-hide -->
 
         <div class="takeaways-box">
             <h2>Chapter Takeaway</h2>
